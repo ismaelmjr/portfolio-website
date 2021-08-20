@@ -279,6 +279,8 @@ form {
 @media all and (max-width: 500px) {
   .standard-label {
     font-size: 0.84em;
+    width: 100px;
+    flex-grow: 0;
   }
 
   .berlin-illustration {
