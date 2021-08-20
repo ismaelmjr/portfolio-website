@@ -240,6 +240,8 @@ form {
 .form-section input:focus,
 .form-section textarea:focus {
   outline: none;
+  outline-offset: -2px;
+  /* Outline offset for Opera browser. */
 }
 
 #contact-message {
