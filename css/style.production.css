@@ -237,8 +237,8 @@ form {
   padding-bottom: 20px;
 }
 
-.form-section input,
-.form-section textarea {
+.form-section input:focus,
+.form-section textarea:focus {
   outline: none;
 }
 
