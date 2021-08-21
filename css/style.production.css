@@ -290,6 +290,11 @@ form {
 @media all and (max-width: 500px) {
   .standard-label {
     font-size: 0.84em;
+    flex-basis: 100px;
+  }
+
+  .standard-textarea {
+    line-height: 1;
   }
 
   .berlin-illustration {
