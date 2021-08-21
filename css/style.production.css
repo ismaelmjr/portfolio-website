@@ -19,10 +19,13 @@ body {
   letter-spacing: 1px;
   background-color: #1c3738;
   color: #f4fff8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -42,18 +45,9 @@ a {
   color: #f4fff8;
 }
 
-a:visited {
-  color: #8baaad;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
 a:active {
   /* selected link */
-  color: #f4fff8;
+  opacity: 0.8;
 }
 
 /* Button Styles */
@@ -120,6 +114,10 @@ button:focus,
   text-align: center;
 }
 
+.container {
+  flex-grow: 1;
+}
+
 .footer-icon {
   color: transparent;
 }
@@ -163,13 +161,23 @@ button:focus,
   list-style-type: none;
 }
 
-.navigation-list li {
-  margin-left: 15px;
-  display: inline-block;
+.navigation-list__item {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease-in;
+}
+
+.navigation-list__item:hover {
+  border-color: #f4fff8;
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  border-bottom: 2px solid #f4fff8;
+}
+
+.navigation-list li {
+  margin-left: 15px;
+  display: inline-block;
 }
 
 .logo {
@@ -224,7 +232,7 @@ button:focus,
 
 form {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .form-section {
@@ -252,7 +260,7 @@ form {
   text-align: center;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1;
+  flex-basis: 150px;
   /* display: inline-block;
   width: 100px;
   text-align: right; */
@@ -261,19 +269,20 @@ form {
 .standard-input {
   -webkit-box-flex: 2;
   -ms-flex-positive: 2;
-  flex-grow: 2;
+  flex-grow: 1;
+  line-height: 1.5;
 }
 
 .telephone {
   -webkit-box-flex: 4;
   -ms-flex-positive: 4;
-  flex-grow: 4;
 }
 
 .standard-textarea {
   -webkit-box-flex: 3;
   -ms-flex-positive: 3;
-  flex-grow: 3;
+  flex-grow: 1;
+  line-height: 2;
 }
 
 /* Media Queries */
@@ -281,8 +290,6 @@ form {
 @media all and (max-width: 500px) {
   .standard-label {
     font-size: 0.84em;
-    width: 100px;
-    flex-grow: 0;
   }
 
   .berlin-illustration {
