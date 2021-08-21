@@ -261,9 +261,6 @@ form {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-basis: 150px;
-  /* display: inline-block;
-  width: 100px;
-  text-align: right; */
 }
 
 .standard-input {
@@ -276,6 +273,7 @@ form {
 .telephone {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .standard-textarea {
@@ -289,9 +287,17 @@ form {
 @media all and (max-width: 575.98px) {
   .standard-label {
     font-size: 0.84em;
-    -ms-flex-preferred-size: 100px;
-    flex-basis: 100px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
     text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .form-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .standard-textarea {
