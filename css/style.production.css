@@ -286,10 +286,10 @@ form {
 }
 
 /* Media Queries */
-
 @media all and (max-width: 575.98px) {
   .standard-label {
     font-size: 0.84em;
+    -ms-flex-preferred-size: 100px;
     flex-basis: 100px;
     text-align: left;
   }
