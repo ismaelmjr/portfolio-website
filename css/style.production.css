@@ -298,8 +298,9 @@ form {
   }
 
   .berlin-illustration {
-    width: 469px;
+    width: 269px;
   }
+
 }
 
 @media all and (max-width: 600px) {
