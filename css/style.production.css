@@ -124,7 +124,7 @@ button:focus,
 
 .profile {
   max-width: 700px;
-  margin: 80px auto 0 auto;
+  margin: 30px auto 0 auto;
   text-align: center;
 }
 
@@ -286,11 +286,15 @@ form {
 /* Media Queries */
 @media all and (max-width: 575.98px) {
   .standard-label {
-    font-size: 0.84em;
+    font-size: 0.9em;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     text-align: left;
     margin-bottom: 10px;
+  }
+
+  .standard-input {
+    line-height: 2;
   }
 
   .form-section {
@@ -300,8 +304,13 @@ form {
     flex-direction: column;
   }
 
+  .form-section input[type="submit"] {
+    padding: 8px;
+    border-radius: 5px;
+  }
+
   .standard-textarea {
-    line-height: 1;
+    line-height: 1.5;
   }
 
   .grid {
@@ -359,9 +368,6 @@ form {
   .grid-item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
   }
 }
 
