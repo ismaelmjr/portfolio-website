@@ -288,10 +288,8 @@ form {
 /* Media Queries */
 
 @media all and (max-width: 500px) {
-  .standard-label,
-  .standard-textarea {
+  .standard-label {
     font-size: 0.84em;
-    flex-grow: 0;
   }
 
   .berlin-illustration {
