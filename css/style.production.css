@@ -291,6 +291,7 @@ form {
   .standard-label {
     font-size: 0.84em;
     flex-basis: 100px;
+    text-align: left;
   }
 
   .standard-textarea {
@@ -300,7 +301,6 @@ form {
   .berlin-illustration {
     width: 269px;
   }
-
 }
 
 @media all and (max-width: 600px) {
