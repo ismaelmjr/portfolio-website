@@ -133,6 +133,10 @@ button:focus,
   padding: 20px;
 }
 
+.berlin-illustration {
+  width: 100%;
+}
+
 /* Page Header Styles */
 
 .page-header {
@@ -261,6 +265,7 @@ form {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-basis: 150px;
+  text-align: left;
 }
 
 .standard-input {
@@ -289,7 +294,6 @@ form {
     font-size: 0.9em;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
-    text-align: left;
     margin-bottom: 10px;
   }
 
@@ -322,13 +326,6 @@ form {
 /* Small devices (landscape phones, less than 768px) */
 
 @media all and (min-width: 576px) and (max-width: 767.98px) {
-  .page-header_item:last-child {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    text-align: center;
-  }
-
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -351,10 +348,6 @@ form {
 
   .logo {
     display: none;
-  }
-
-  .berlin-illustration {
-    width: 100%;
   }
 }
 
